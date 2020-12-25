@@ -19,7 +19,7 @@ export default class MoviesTable {
   renderTable() {
     const propsByOrder = ['id', 'title', 'year', 'imdb'];
     const tbody = this.tableElem.getElementsByTagName('tbody')[0];
-    let tbodyNew = document.createElement('tbody');
+    const tbodyNew = document.createElement('tbody');
 
     for (const movie of this.actualOrder) {
       const row = document.createElement('tr');
